@@ -92,9 +92,14 @@ int main(void)
   MX_USART2_Init();
   /* USER CODE BEGIN 2 */
   SSD1306_init();
-  GFX_draw_fill_rect(0, 0, 64, 32, WHITE);
- // GFX_draw_fill_rect(64, 32, 64, 32, WHITE);
-  //GFX_draw_string(3, 25, (unsigned char *)"Mihai", WHITE, BLACK, 2, 2);
+  //GFX_draw_fill_rect(0, 0, 64, 32, WHITE);
+  //GFX_draw_fill_rect(64, 32, 64, 32, WHITE);
+  GFX_draw_string(1, 50, (unsigned char *)"* Hello :) *", WHITE, BLACK, 1, 1);
+  GFX_draw_string(1, 40, (unsigned char *)"__________________", WHITE, BLACK, 1, 1);
+  GFX_draw_string(2, 30, (unsigned char *)"> a:Bruma Mihai  <", WHITE, BLACK, 1, 1);
+  GFX_draw_string(3, 20, (unsigned char *)"> Embedded C <", WHITE, BLACK, 1, 1);
+  GFX_draw_string(1, 10, (unsigned char *)"__________________", WHITE, BLACK, 1, 1);
+  GFX_draw_string(5, 0, (unsigned char *)"  ->->->->->  ", WHITE, BLACK, 1, 1);
   SSD1306_display_repaint();
   /* USER CODE END 2 */
 
